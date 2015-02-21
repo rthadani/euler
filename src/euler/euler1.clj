@@ -6,7 +6,7 @@
 (defn multiples_3_or_5 []
   (filter #(or (multiple_of % 3)(multiple_of % 5)) (range 1000)))
 
-(defn sum
+(defn sum []
   (apply + (multiples_3_or_5)))
 
 (sum)

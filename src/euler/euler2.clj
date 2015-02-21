@@ -8,7 +8,7 @@
 (defn fib-even<4mil []
   (filter #(and (< % 4000000)(even? %)) (take 100 (fib-seq))))
 
-(def sum []
+(defn sum []
   (apply + (fib-even<4mil)))
 
 (sum)

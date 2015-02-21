@@ -16,7 +16,7 @@
   (->> (all-products)
        (map (fn [[x y]](* x y)))
        (filter palindrome?)
-       (apply max))
+       (apply max)))
 
 (largest-palindrome)
 
